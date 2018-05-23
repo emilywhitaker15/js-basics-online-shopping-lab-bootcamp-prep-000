@@ -16,7 +16,6 @@ function getRandomInt(min, max) {
 }
 
 function addToCart(item) {
- // write your code here
  var itemAttributes = {
  itemName : item,
  itemPrice : getRandomInt(1, 100)
@@ -49,7 +48,6 @@ function viewCart() {
 }  
 
 function total() {
-  // write your code here
   getCart()
   var sum = 0
   for (var i = 0; i < cart.length; i++) {
