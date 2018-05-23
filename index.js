@@ -62,10 +62,10 @@ function removeFromCart(item) {
     if (cart[i].itemName === item) {
       cart.prototype.splice(i, 1)
     }
-    return cart
     else {
       return "That item is not in your cart."
     }
+    return cart
   }
 }
 
