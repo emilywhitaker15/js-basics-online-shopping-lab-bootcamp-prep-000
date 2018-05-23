@@ -31,12 +31,15 @@ function viewCart() {
   getCart()
   if (cart.length > 0) {
    for (i = 0; i < cart.length; i++) {
-    if (cart.length > 0 && i + 1 !== cart.length) {
+    if (cart.length > 0 && i + 1 !== cart.length && cart.length !== 1) {
         announcement = announcement + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
-     } 
-    else if (cart.length > 0 && i + 1 === cart.length) {
+     }
+     else if (cart.length > 0 && i + 1 === cart.length && cart.length !== 1) {
       announcement = announcement + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }
+    else if (cart.length === 1) {
+      announcement = announcement + ` ${cart[i].itemName} at $${cart[i].itemPrice}.`
+    }
   }
     return announcement
   }  
