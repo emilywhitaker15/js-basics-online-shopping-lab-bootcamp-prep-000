@@ -27,8 +27,9 @@ function addToCart(item) {
 
 function viewCart() {
   var announcement = "In your cart, you have "
+  var i
   if (cart.length > 0) {
-   for (var i = 0; i < cart.length; i++) {
+   for (i = 0; i < cart.length; i++) {
     if (cart.length > 0 && i + 1 !== cart.length) {
         announcement = announcement + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
      } 
