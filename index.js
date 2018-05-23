@@ -35,7 +35,7 @@ function viewCart() {
         announcement = announcement + ` ${cart[i].itemName} at $${cart[i].itemPrice},`
      } 
     else if (cart.length > 0 && i + 1 === cart.length) {
-      announcement = announcement + ` and  ${cart[i].itemName} at $${cart[i].itemPrice}.`
+      announcement = announcement + ` and ${cart[i].itemName} at $${cart[i].itemPrice}.`
       }
   }
     return announcement
