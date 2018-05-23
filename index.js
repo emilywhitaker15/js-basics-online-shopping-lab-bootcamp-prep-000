@@ -52,7 +52,7 @@ function total() {
   // write your code here
   getCart()
   var sum = 0
-  for (i = 0; i < cart.length; i++) {
+  for (var i = 0; i < cart.length; i++) {
     sum = sum + cart[i].itemPrice
   }
   return sum
