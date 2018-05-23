@@ -45,10 +45,6 @@ function viewCart() {
   }
 }  
 
-function viewCart() {
-  // write your code here
-}
-
 function total() {
   // write your code here
 }
